@@ -13,72 +13,72 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: ffffffff;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.RegistroController">
    <children>
-      <ImageView fitHeight="719.0" fitWidth="454.0" layoutY="137.0" nodeOrientation="INHERIT" opacity="0.75" pickOnBounds="true">
+      <ImageView fitHeight="719.0" fitWidth="454.0" layoutY="91.0" nodeOrientation="INHERIT" opacity="0.75" pickOnBounds="true">
          <image>
             <Image url="@w12984-small.jpg" />
          </image>
       </ImageView>
-      <RadioButton layoutX="82.0" layoutY="462.0" mnemonicParsing="false" onAction="#hombreRadioButtonPressed" text="Hombre">
+      <RadioButton layoutX="75.0" layoutY="420.0" mnemonicParsing="false" onAction="#hombreRadioButtonPressed" text="Hombre">
          <font>
             <Font name="Calibri Bold Italic" size="24.0" />
          </font>
       </RadioButton>
-      <RadioButton layoutX="225.0" layoutY="462.0" mnemonicParsing="false" onAction="#mujerRadioButtonPressed" text="Mujer">
+      <RadioButton layoutX="209.0" layoutY="420.0" mnemonicParsing="false" onAction="#mujerRadioButtonPressed" text="Mujer">
          <font>
             <Font name="Calibri Bold Italic" size="24.0" />
          </font>
       </RadioButton>
-      <RadioButton layoutX="353.0" layoutY="462.0" mnemonicParsing="false" onAction="#otroRadioButtonPressed" text="Otro">
+      <RadioButton layoutX="335.0" layoutY="420.0" mnemonicParsing="false" onAction="#otroRadioButtonPressed" text="Otro">
          <font>
             <Font name="Calibri Bold Italic" size="24.0" />
          </font>
       </RadioButton>
-      <Label layoutX="13.0" layoutY="464.0" text="Sexo:">
+      <Label layoutX="13.0" layoutY="422.0" text="Sexo:">
          <font>
             <Font name="Calibri Bold Italic" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="13.0" layoutY="314.0" text="Nombres:">
+      <Label layoutX="47.0" layoutY="266.0" text="Nombres:">
          <font>
             <Font name="Calibri Bold Italic" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="13.0" layoutY="364.0" text="Apellidos:">
+      <Label layoutX="46.0" layoutY="313.0" text="Apellidos:">
          <font>
             <Font name="Calibri Bold Italic" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="13.0" layoutY="414.0" text="Nacionalidad:">
+      <Label layoutX="39.0" layoutY="358.0" text="Nacionalidad:">
          <font>
             <Font name="Calibri Bold Italic" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="13.0" layoutY="514.0" text="Fecha de nacimiento:">
+      <Label layoutX="9.0" layoutY="473.0" text="Fecha de nacimiento:">
          <font>
             <Font name="Calibri Bold Italic" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="13.0" layoutY="564.0" text="Codigo postal:">
+      <Label layoutX="15.0" layoutY="511.0" text="Codigo postal:">
          <font>
             <Font name="Calibri Bold Italic" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="13.0" layoutY="614.0" text="Numero telefonico:">
+      <Label layoutX="13.0" layoutY="558.0" text="Numero telefonico:">
          <font>
             <Font name="Calibri Bold Italic" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="13.0" layoutY="664.0" text="Correo:">
+      <Label layoutX="121.0" layoutY="609.0" text="Correo:">
          <font>
             <Font name="Calibri Bold Italic" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="13.0" layoutY="714.0" text="Contraseña:">
+      <Label layoutX="15.0" layoutY="635.0" text="Contraseña:">
          <font>
             <Font name="Calibri Bold Italic" size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="nameTextField" alignment="TOP_LEFT" layoutX="210.0" layoutY="306.0" prefHeight="44.0" prefWidth="231.0">
+      <TextField fx:id="nameTextField" alignment="TOP_LEFT" layoutX="190.0" layoutY="262.0" prefHeight="35.0" prefWidth="231.0">
          <font>
             <Font name="Calibri Bold Italic" size="18.0" />
          </font>
@@ -86,58 +86,64 @@
             <Insets />
          </opaqueInsets>
       </TextField>
-      <TextField fx:id="apellidoTextField" layoutX="210.0" layoutY="356.0" prefHeight="44.0" prefWidth="231.0">
+      <TextField fx:id="apellidoTextField" layoutX="190.0" layoutY="310.0" prefHeight="35.0" prefWidth="231.0">
          <font>
             <Font name="Calibri Bold Italic" size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="nacionalidaTextField" layoutX="210.0" layoutY="406.0" prefHeight="44.0" prefWidth="231.0">
+      <TextField fx:id="nacionalidaTextField" layoutX="190.0" layoutY="354.0" prefHeight="35.0" prefWidth="231.0">
          <font>
             <Font name="Calibri Bold Italic" size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="codpostalTextField" layoutX="210.0" layoutY="556.0" prefHeight="44.0" prefWidth="231.0">
+      <TextField fx:id="codpostalTextField" layoutX="209.0" layoutY="510.0" opacity="0.79" prefHeight="30.0" prefWidth="231.0">
+         <font>
+            <Font name="Calibri Bold Italic" size="1.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="9.0" left="9.0" right="9.0" top="9.0" />
+         </padding>
+      </TextField>
+      <TextField fx:id="numtelfTextField" layoutX="209.0" layoutY="555.0" prefHeight="30.0" prefWidth="231.0">
          <font>
             <Font name="Calibri Bold Italic" size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="numtelfTextField" layoutX="210.0" layoutY="606.0" prefHeight="44.0" prefWidth="231.0">
+      <TextField fx:id="correoTextField" layoutX="209.0" layoutY="605.0" prefHeight="35.0" prefWidth="231.0">
          <font>
             <Font name="Calibri Bold Italic" size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="correoTextField" layoutX="209.0" layoutY="656.0" prefHeight="44.0" prefWidth="231.0">
+      <TextField fx:id="contraseñaTextField" layoutX="219.0" layoutY="646.0" prefHeight="35.0" prefWidth="231.0">
          <font>
             <Font name="Calibri Bold Italic" size="18.0" />
          </font>
       </TextField>
-      <TextField fx:id="contraseñaTextField" layoutX="209.0" layoutY="706.0" prefHeight="44.0" prefWidth="231.0">
-         <font>
-            <Font name="Calibri Bold Italic" size="18.0" />
-         </font>
-      </TextField>
-      <Label layoutX="60.0" layoutY="70.0" text="Registro a" textAlignment="CENTER">
+      <Label layoutX="47.0" layoutY="41.0" text="Registro a" textAlignment="CENTER">
          <font>
             <Font name="Forte" size="33.0" />
          </font>
       </Label>
-      <ImageView fitHeight="135.0" fitWidth="130.0" layoutX="282.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="63.0" fitWidth="73.0" layoutX="197.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@24222430-493c-4faf-8622-9a86db1236a1.png" />
          </image>
       </ImageView>
-      <DatePicker layoutX="229.0" layoutY="513.0" prefHeight="32.0" prefWidth="212.0" />
-      <Button layoutX="157.0" layoutY="771.0" mnemonicParsing="false" onAction="#registraseButtonPressed" style="-fx-background-color: #ffccff;" text="Registrarse" textAlignment="CENTER">
+      <DatePicker layoutX="229.0" layoutY="471.0" prefHeight="32.0" prefWidth="212.0" />
+      <Button layoutX="49.0" layoutY="681.0" mnemonicParsing="false" onAction="#registraseButtonPressed" style="-fx-background-color: #ffccff;" text="Registrarse" textAlignment="CENTER">
          <font>
             <Font name="Calibri Bold" size="24.0" />
          </font>
       </Button>
-      <ImageView fitHeight="107.0" fitWidth="130.0" layoutX="162.0" layoutY="180.0" pickOnBounds="true">
+      <ImageView fitHeight="107.0" fitWidth="130.0" layoutX="162.0" layoutY="140.0" pickOnBounds="true">
          <image>
             <Image url="@descarga.png" />
          </image>
       </ImageView>
-      <Label layoutX="134.0" layoutY="146.0" text="Subir foto de perfil">
+      <Label layoutX="136.0" layoutY="106.0" text="Subir foto de perfil">
          <font>
             <Font name="Calibri Bold Italic" size="24.0" />
          </font>

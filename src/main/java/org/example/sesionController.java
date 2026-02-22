@@ -20,7 +20,16 @@ public class sesionController {
     private TextField correosesionTextField;
 
     @FXML
-    void iniciiarsecionButtonPressed(ActionEvent event) {
+    void iniciiarsecionButtonPressed(ActionEvent event)throws IOException {
+        FXMLLoader loader = new FXMLLoader(
+                sesionController.class.getResource("/sugerencias.fxml")
+        );
+
+        Parent root = loader.load();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.show();
 
     }
 
@@ -33,9 +42,21 @@ public class sesionController {
         Parent root = loader.load();
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setScene(new Scene(root,450, 750));
+        stage.setScene(new Scene(root));
         stage.show();
 
+    }
+    @FXML
+    void regresoButtonPressed(ActionEvent event)throws IOException {
+        FXMLLoader loader = new FXMLLoader(
+                sesionController.class.getResource("/iniciodesesion.fxml")
+        );
+
+        Parent root = loader.load();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root,450, 750));
+        stage.show();
     }
 
 }
