@@ -12,7 +12,14 @@ import java.io.IOException;
 public class mensajesController {
 
     @FXML
-    void aceptarcadeButtonPressed(ActionEvent event) {
+    void aceptarcadeButtonPressed(ActionEvent event)throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/rechazocade.fxml"));
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        stage.setScene(new Scene(root));
+        stage.show();
+
 
     }
 
@@ -23,7 +30,7 @@ public class mensajesController {
 
     @FXML
     void inicioButtonPressed(ActionEvent event)throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/seugerencias.fxml")
+        Parent root = FXMLLoader.load(getClass().getResource("/sugerencias.fxml")
         );
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -34,7 +41,13 @@ public class mensajesController {
     }
 
     @FXML
-    void rechazarcadeButtonPressed(ActionEvent event) {
+    void rechazarcadeButtonPressed(ActionEvent event)throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/rechazocade.fxml"));
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        stage.setScene(new Scene(root));
+        stage.show();
 
     }
 
