@@ -1,10 +1,9 @@
 module sistema.citas {
+
     requires javafx.controls;
     requires javafx.fxml;
-    requires java.desktop;
     requires javafx.graphics;
-    requires javafx.base;
 
-    opens org.example to javafx.fxml, javafx.controls, javafx.graphics;
+    opens org.example to javafx.fxml;
     exports org.example;
 }
