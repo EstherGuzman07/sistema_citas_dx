@@ -1,9 +1,8 @@
 package org.example;
-
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.event.ActionEvent;
 
-public class Rechazocade {
+public class rechazocadeController {
 
     @FXML
     void aceptarmikuButtonPressed(ActionEvent event) {
