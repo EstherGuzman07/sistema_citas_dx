@@ -42,10 +42,13 @@ public class mensajesController {
 
     @FXML
     void rechazarcadeButtonPressed(ActionEvent event)throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/rechazocade.fxml"));
+        FXMLLoader loader = new FXMLLoader(
+                mensajesController.class.getResource("/rechazocade.fxml")
+        );
+
+        Parent root = loader.load();
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
         stage.setScene(new Scene(root));
         stage.show();
 

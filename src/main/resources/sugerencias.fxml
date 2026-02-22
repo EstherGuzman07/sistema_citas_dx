@@ -7,104 +7,79 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="853.0" prefWidth="454.0" style="-fx-background-color: fffff;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.seugerenciasController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="384.0" style="-fx-background-color: fffff;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.seugerenciasController">
    <children>
-      <Pane layoutX="22.0" layoutY="144.0" prefHeight="192.0" prefWidth="411.0" style="-fx-background-color: FFC9C9;">
+      <Pane layoutX="25.0" layoutY="110.0" prefHeight="139.0" prefWidth="344.0" style="-fx-background-color: FFC9C9;">
          <children>
-            <Label layoutX="172.0" layoutY="25.0" prefHeight="118.0" prefWidth="223.0" text="Goku&#9;&#9;&#9;&#10;Edad:46&#9;&#9;Sexo Hombre&#10;Nacionalidad: Planeta Vegeta&#10;Vive en: Mexico, Cancun">
+            <Label layoutX="125.0" layoutY="25.0" prefHeight="91.0" prefWidth="164.0" text="Gotica67&#9;&#9;&#10;Edad: 20&#9;&#9;Sexo Hombre&#10;Nacionalidad: Mexico&#10;Vive en: Mexico, Cancun">
                <font>
-                  <Font name="Calibri Bold" size="18.0" />
+                  <Font name="Calibri Bold" size="12.0" />
                </font>
             </Label>
-            <ImageView fitHeight="118.0" fitWidth="122.0" layoutX="7.0" layoutY="25.0" pickOnBounds="true">
-               <image>
-                  <Image url="@images.jpg" />
-               </image>
-            </ImageView>
-            <Label layoutX="243.0" layoutY="6.0" text="Datos">
-               <font>
-                  <Font name="Forte" size="18.0" />
-               </font>
-            </Label>
-            <Button layoutX="145.0" layoutY="143.0" mnemonicParsing="false" onAction="#conocer1ButtonPressed" prefHeight="39.0" prefWidth="122.0" style="-fx-background-color: #84b6f4;" text="Conocer ⋙">
-               <font>
-                  <Font name="Calibri" size="18.0" />
-               </font>
-            </Button>
-         </children>
-      </Pane>
-      <Pane layoutX="22.0" layoutY="365.0" prefHeight="192.0" prefWidth="411.0" style="-fx-background-color: FFC9C9;">
-         <children>
-            <ImageView fitHeight="118.0" fitWidth="122.0" layoutX="7.0" layoutY="27.0" pickOnBounds="true">
+            <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="7.0" layoutY="30.0" pickOnBounds="true">
                <image>
                   <Image url="@images%20(1).jpg" />
                </image>
             </ImageView>
-            <Label layoutX="243.0" layoutY="6.0" text="Datos">
+            <Label layoutX="175.0" layoutY="6.0" text="Datos">
                <font>
                   <Font name="Forte" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="172.0" layoutY="30.0" text="Gotica67&#9;&#9;&#10;Edad: 20&#9;&#9;Sexo Hombre&#10;Nacionalidad: Mexico&#10;Vive en: Mexico, CDMX">
+            <Button layoutX="110.0" layoutY="110.0" mnemonicParsing="false" onAction="#sugerenciagoticaButtonPressed" prefHeight="23.0" prefWidth="115.0" style="-fx-background-color: #84b6f4;" text="Mandar solicitud⋙">
                <font>
-                  <Font name="Calibri Bold" size="18.0" />
-               </font>
-            </Label>
-            <Button layoutX="149.0" layoutY="145.0" mnemonicParsing="false" onAction="#conocer2ButtonPressed" prefHeight="39.0" prefWidth="122.0" style="-fx-background-color: #84b6f4;" text="Conocer ⋙">
-               <font>
-                  <Font name="Calibri" size="18.0" />
+                  <Font name="Calibri" size="12.0" />
                </font>
             </Button>
          </children>
       </Pane>
-      <Pane layoutX="22.0" layoutY="587.0" prefHeight="192.0" prefWidth="411.0" style="-fx-background-color: FFC9C9;">
+      <Pane layoutX="25.0" layoutY="281.0" prefHeight="139.0" prefWidth="344.0" style="-fx-background-color: FFC9C9;">
          <children>
-            <Label layoutX="172.0" layoutY="30.0" text="Vegetta777&#9;&#10;Edad: 36&#9;&#9;Sexo Hombre&#10;Nacionalidad: España&#10;Vive en: Mexico, Campeche">
+            <Label layoutX="125.0" layoutY="30.0" text="Vegetta777&#9;&#10;Edad: 36&#9;&#9;Sexo Hombre&#10;Nacionalidad: España&#10;Vive en: Mexico, Campeche">
                <font>
-                  <Font name="Calibri Bold" size="18.0" />
+                  <Font name="Calibri Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="243.0" layoutY="6.0" text="Datos">
+            <Label layoutX="175.0" layoutY="6.0" text="Datos">
                <font>
                   <Font name="Forte" size="18.0" />
                </font>
             </Label>
-            <ImageView fitHeight="118.0" fitWidth="122.0" layoutX="7.0" layoutY="27.0" pickOnBounds="true">
+            <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="7.0" layoutY="30.0" pickOnBounds="true">
                <image>
                   <Image url="@images%20(2).jpg" />
                </image>
             </ImageView>
-            <Button layoutX="152.0" layoutY="144.0" mnemonicParsing="false" onAction="#conocer3ButtonPressed" prefHeight="39.0" prefWidth="122.0" style="-fx-background-color: #84b6f4;" text="Conocer ⋙">
+            <Button layoutX="110.0" layoutY="110.0" mnemonicParsing="false" onAction="#sugerenciavegettaButtonPressed" prefHeight="23.0" prefWidth="115.0" style="-fx-background-color: #84b6f4;" text="Mandar solicitud⋙">
                <font>
-                  <Font name="Calibri" size="18.0" />
+                  <Font name="Calibri" size="12.0" />
                </font>
             </Button>
          </children>
       </Pane>
-      <Label layoutX="14.0" layoutY="102.0" text="Quisas quieras conocerlos">
+      <Label layoutX="10.0" layoutY="85.0" text="Quisas quieras conocerlos...">
          <font>
-            <Font name="Forte" size="24.0" />
+            <Font name="Forte" size="18.0" />
          </font>
       </Label>
-      <Pane prefHeight="81.0" prefWidth="454.0" style="-fx-background-color: #84b6f4;">
+      <Pane prefHeight="81.0" prefWidth="384.0" style="-fx-background-color: #84b6f4;">
          <children>
-            <ImageView fitHeight="71.0" fitWidth="67.0" layoutX="333.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="71.0" fitWidth="67.0" layoutX="248.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@descarga.jpg" />
+                  <Image url="@descarga.png" />
                </image>
             </ImageView>
-            <Button layoutX="390.0" layoutY="26.0" mnemonicParsing="false" onAction="#PerfilButtonPressed" style="-fx-background-color: #84b6f4;" text="Perfil">
+            <Button layoutX="317.0" layoutY="29.0" mnemonicParsing="false" onAction="#PerfilButtonPressed" style="-fx-background-color: #84b6f4;" text="Perfil">
                <font>
                   <Font name="Calibri Bold" size="18.0" />
                </font>
             </Button>
-            <Button layoutX="14.0" layoutY="27.0" mnemonicParsing="false" onAction="#filtrarButtonPressed" style="-fx-background-color: fffffff;" text="Filtrar ">
+            <Button layoutX="24.0" layoutY="28.0" mnemonicParsing="false" onAction="#filtrarButtonPressed" style="-fx-background-color: fffffff;" text="Filtrar ">
                <font>
                   <Font name="Calibri Bold" size="18.0" />
                </font>
             </Button>
-            <Button layoutX="87.0" layoutY="27.0" mnemonicParsing="false" onAction="#MensajesButtonPressed" style="-fx-background-color: fffffff;" text="Mensajes">
+            <Button layoutX="106.0" layoutY="28.0" mnemonicParsing="false" onAction="#MensajesButtonPressed" style="-fx-background-color: fffffff;" text="Mensajes">
                <font>
                   <Font name="Calibri Bold" size="18.0" />
                </font>

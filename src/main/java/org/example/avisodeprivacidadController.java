@@ -26,7 +26,16 @@ public class avisodeprivacidadController {
     }
 
     @FXML
-    void rechazaraprivacidadButtonPressed(ActionEvent event) {
+    void rechazaraprivacidadButtonPressed(ActionEvent event)throws IOException {
+        FXMLLoader loader = new FXMLLoader(
+                avisodeprivacidadController.class.getResource("/sugerencias.fxml")
+        );
+
+        Parent root = loader.load();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.show();
 
     }
 
