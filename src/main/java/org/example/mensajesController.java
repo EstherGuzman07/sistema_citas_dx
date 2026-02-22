@@ -24,7 +24,15 @@ public class mensajesController {
     }
 
     @FXML
-    void aceptarmikuButtonPressed(ActionEvent event) {
+    void aceptarmikuButtonPressed(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(
+                mensajesController.class.getResource("/rechazomiku.fxml"));
+        Parent root = loader.load();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.show();
+
 
     }
 
@@ -55,7 +63,15 @@ public class mensajesController {
     }
 
     @FXML
-    void rechazarmikuButtonPressed(ActionEvent event) {
+    void rechazarmikuButtonPressed(ActionEvent event)throws IOException {
+        FXMLLoader loader = new FXMLLoader(
+                mensajesController.class.getResource("/rechazomiku.fxml"));
+
+        Parent root = loader.load();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.show();
 
     }
 }
