@@ -34,7 +34,7 @@
             <Font name="Corbel Bold" size="24.0" />
          </font>
       </Label>
-      <Button layoutX="163.0" layoutY="589.0" mnemonicParsing="false" onAction="#enviarButtonPressed" prefHeight="51.0" prefWidth="128.0" style="-fx-background-color: #ffccff;" text="Enviar">
+      <Button layoutX="148.0" layoutY="512.0" mnemonicParsing="false" onAction="#enviarButtonPressed" prefHeight="51.0" prefWidth="128.0" style="-fx-background-color: #ffccff;" text="Enviar">
          <font>
             <Font name="Calibri" size="24.0" />
          </font></Button>

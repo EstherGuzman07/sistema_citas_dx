@@ -19,12 +19,12 @@
             <Image url="@w12984-small.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="153.0" fitWidth="149.0" layoutX="292.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="98.0" fitWidth="106.0" layoutX="312.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@24222430-493c-4faf-8622-9a86db1236a1.png" />
          </image>
       </ImageView>
-      <Label layoutX="14.0" layoutY="60.0" prefHeight="29.0" prefWidth="278.0" text="Inicio de sesion a">
+      <Label layoutX="14.0" layoutY="114.0" prefHeight="29.0" prefWidth="278.0" text="Inicio de sesion a">
          <font>
             <Font name="Forte" size="33.0" />
          </font>
@@ -47,14 +47,14 @@
          <font>
             <Font size="24.0" />
          </font></TextField>
-      <Button layoutX="153.0" layoutY="554.0" mnemonicParsing="false" onAction="#iniciiarsecionButtonPressed" style="-fx-background-color: #ffccff;" text="Iniciar sesion">
+      <Button layoutX="147.0" layoutY="475.0" mnemonicParsing="false" onAction="#iniciiarsecionButtonPressed" style="-fx-background-color: #ffccff;" text="Iniciar sesion">
          <font>
             <Font name="Calibri" size="24.0" />
          </font></Button>
-      <Button layoutX="136.0" layoutY="620.0" mnemonicParsing="false" onAction="#olvidaedatosButtonPressed" style="-fx-background-color: #ffccff;" text="Olvide mis datos">
+      <Button layoutX="130.0" layoutY="537.0" mnemonicParsing="false" onAction="#olvidaedatosButtonPressed" style="-fx-background-color: #ffccff;" text="Olvide mis datos">
          <font>
             <Font name="Calibri" size="24.0" />
          </font></Button>
-      <Button layoutX="9.0" layoutY="108.0" mnemonicParsing="false" onAction="#regresoButtonPressed" text="Regresar" />
+      <Button layoutX="9.0" layoutY="89.0" mnemonicParsing="false" onAction="#regresoButtonPressed" text="Regresar" />
    </children>
 </Pane>

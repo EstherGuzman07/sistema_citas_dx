@@ -14,11 +14,13 @@ public class nombresdeequposController {
 
     @FXML
     void regresaratras(ActionEvent event)throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/iniciodesesion.fxml")
+        FXMLLoader loader = new FXMLLoader(
+                nombresdeequposController.class.getResource("/iniciodesesion.fxml")
         );
 
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Parent root = loader.load();
 
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
 
