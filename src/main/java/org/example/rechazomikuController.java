@@ -13,7 +13,14 @@ import java.io.IOException;
 public class rechazomikuController {
 
     @FXML
-    void aceptarcadeButtonPressed(ActionEvent event) {
+    void aceptarcadeButtonPressed(ActionEvent event)throws IOException{
+        Parent root = FXMLLoader.load(getClass().getResource("/sinmensajes.fxml")
+        );
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        stage.setScene(new Scene(root));
+        stage.show();
 
     }
 
@@ -27,11 +34,18 @@ public class rechazomikuController {
         stage.setScene(new Scene(root));
         stage.show();
 
-
     }
 
     @FXML
-    void rechazarcadeButtonPressed(ActionEvent event) {
+    void rechazarcadeButtonPressed(ActionEvent event)throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/sinmensajes.fxml")
+        );
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        stage.setScene(new Scene(root));
+        stage.show();
+
 
     }
 
