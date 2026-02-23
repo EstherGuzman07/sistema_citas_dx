@@ -13,21 +13,20 @@ import java.io.IOException;
 public class nombresdeequposController {
 
     @FXML
-    void regresaratras(ActionEvent event)throws IOException {
-        FXMLLoader loader = new FXMLLoader(
-                nombresdeequposController.class.getResource("/iniciodesesion.fxml")
+    void regresaratrasButtonPressed(ActionEvent event)throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/nombresdeequipos.fxml")
         );
 
-        Parent root = loader.load();
-
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
         stage.setScene(new Scene(root));
         stage.show();
 
     }
 
     @FXML
-    void slirdenombresdeequiposButtonPressed(MouseEvent event) {
+    void slirdenombresdeequiposButtonPressed(MouseEvent event)  {
+
 
     }
 
