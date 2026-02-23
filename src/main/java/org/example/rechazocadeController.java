@@ -13,7 +13,7 @@ public class rechazocadeController {
 
     @FXML
     void aceptarmikuButtonPressed(ActionEvent event)throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/sinmensajes.fxml")
+        Parent root = FXMLLoader.load(getClass().getResource("/acptarmiku.fxml")
         );
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
