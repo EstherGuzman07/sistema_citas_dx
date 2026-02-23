@@ -8,45 +8,33 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="853.0" prefWidth="454.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.cadeController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="384.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.cadeController">
    <children>
-      <Pane prefHeight="80.0" prefWidth="454.0" style="-fx-background-color: #84b6f4;">
+      <Pane prefHeight="61.0" prefWidth="384.0" style="-fx-background-color: #84b6f4;">
          <children>
             <Button layoutY="23.0" mnemonicParsing="false" onAction="#regresarcadeButtonPressed" style="-fx-background-color: #84b6f4;" text="← ">
                <font>
                   <Font name="Calibri Bold" size="18.0" />
                </font>
             </Button>
-            <Label layoutX="201.0" layoutY="27.0" text="Cade">
+            <Label layoutX="162.0" layoutY="27.0" text="Cade">
                <font>
                   <Font name="Forte" size="24.0" />
                </font>
             </Label>
          </children>
       </Pane>
-      <ImageView fitHeight="181.0" fitWidth="175.0" layoutX="140.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="153.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images%20(3).jpg" />
          </image>
       </ImageView>
-      <Label layoutX="84.0" layoutY="277.0" prefHeight="175.0" prefWidth="287.0" style="-fx-background-color: FFC9C9;" text=" Datos&#10; Edad: 33&#10; Sexo: Hombre&#10; Nacionalidad: Española&#10; Vive en: Mexico, Tampico" textAlignment="CENTER">
-         <font>
-            <Font size="24.0" />
-         </font>
+      <Label layoutX="35.0" layoutY="159.0" prefHeight="106.0" prefWidth="141.0" style="-fx-background-color: FFC9C9;" text=" Datos&#10; Edad: 33&#10; Sexo: Hombre&#10; Nacionalidad: Española&#10; Vive en: Mexico, Tampico">
          <opaqueInsets>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </opaqueInsets>
       </Label>
-      <Label layoutX="80.0" layoutY="458.0" prefHeight="105.0" prefWidth="296.0" style="-fx-background-color: FFC9C9;" text=" Contacto&#10; Telefono: 9811311652&#10; Instagram: jorge__gallardo&#10;">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Label>
-      <Label layoutX="53.0" layoutY="574.0" prefHeight="196.0" prefWidth="349.0" style="-fx-background-color: FFC9C9;" text=" Sobre mi:&#10; Me gusta juegos de terror.&#10; Me gustaria conocer a alguien&#10; para jugar juegos mayor mente &#10; de terro y asustarnos juntos.&#10;">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Label>
+      <Label layoutX="190.0" layoutY="159.0" prefHeight="106.0" prefWidth="150.0" style="-fx-background-color: FFC9C9;" text=" Contacto&#10; Telefono: 9811311652&#10; Instagram: jorge__gallardo&#10;" />
+      <Label layoutX="35.0" layoutY="279.0" prefHeight="106.0" prefWidth="305.0" style="-fx-background-color: FFC9C9;" text=" Sobre mi:&#10; Me gusta juegos de terror.&#10; Me gustaria conocer a alguien&#10; para jugar juegos mayor mente &#10; de terro y asustarnos juntos.&#10;" />
    </children>
 </Pane>

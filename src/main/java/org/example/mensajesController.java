@@ -13,7 +13,7 @@ public class mensajesController {
 
     @FXML
     void aceptarcadeButtonPressed(ActionEvent event)throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/rechazocade.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/acptarcade.fxml"));
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
@@ -26,7 +26,7 @@ public class mensajesController {
     @FXML
     void aceptarmikuButtonPressed(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(
-                mensajesController.class.getResource("/rechazomiku.fxml"));
+                mensajesController.class.getResource("/acptarmiku.fxml"));
         Parent root = loader.load();
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
