@@ -10,44 +10,44 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+
+
 public class IniciodesesionController {
 
     @FXML
-    void equipo(ActionEvent event)throws IOException {
-        FXMLLoader loader = new FXMLLoader(
-                IniciodesesionController.class.getResource("/nombresdeequipos.fxml")
+    void equipo(ActionEvent event) throws IOException {
+            Parent root = FXMLLoader.load(getClass().getResource("/nombresdeequipos.fxml")
+            );
+
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+            stage.setScene(new Scene(root));
+            stage.show();
+
+    }
+
+    @FXML
+    void iniciosecionButtonPressed(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/iniciodesesion.fxml")
         );
 
-        Parent root = loader.load();
-
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
         stage.setScene(new Scene(root));
         stage.show();
 
     }
-    @FXML
-    void iniciosecionButtonPressed(ActionEvent event)throws IOException {
-        FXMLLoader loader = new FXMLLoader(
-                IniciodesesionController.class.getResource("/sesion.fxml")
-        );
-
-        Parent root = loader.load();
-
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setScene(new Scene(root,450, 750));
-        stage.show();
-    }
 
     @FXML
-    void irASegundaEscena(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(
-                IniciodesesionController.class.getResource("/Registro.fxml")
+    void registroButtonPressed(ActionEvent event)throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/Registr.fxml")
         );
 
-        Parent root = loader.load();
-
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setScene(new Scene(root,450, 750));
+
+        stage.setScene(new Scene(root));
         stage.show();
+
     }
-    }
+
+}
