@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class perfilController {
-
+//conexion a inicio
     @FXML
     void inicioButton1Pressed(ActionEvent event)throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/sugerencias.fxml")
