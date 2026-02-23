@@ -16,7 +16,7 @@ public class IniciodesesionController {
     @FXML
     void Equipo(ActionEvent event)throws IOException {
         FXMLLoader loader = new FXMLLoader(
-                IniciodesesionController.class.getResource("/nombresdeequpos.fxml")
+                IniciodesesionController.class.getResource("/nombresdeequipos.fxml")
         );
 
         Parent root = loader.load();
@@ -27,17 +27,7 @@ public class IniciodesesionController {
 
     }
 
-    @FXML
-    void equipo(ActionEvent event) throws IOException {
-            Parent root = FXMLLoader.load(getClass().getResource("/nombresdeequipos.fxml")
-            );
 
-            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-            stage.setScene(new Scene(root));
-            stage.show();
-
-    }
 
     @FXML
     void iniciosecionButtonPressed(ActionEvent event) throws IOException {
@@ -53,7 +43,7 @@ public class IniciodesesionController {
 
     @FXML
     void registroButtonPressed(ActionEvent event)throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/Registr.fxml")
+        Parent root = FXMLLoader.load(getClass().getResource("/Registro.fxml")
         );
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
