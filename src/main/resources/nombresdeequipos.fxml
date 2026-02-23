@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#slirdenombresdeequiposButtonPressed" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.nombresdeequposController">
    <children>
       <Label layoutX="124.0" layoutY="60.0" text="Equipo los  pantufla powers&#10;Jhonny Ramirez Garcia&#10;Angel Emilio Hernandez &#10;Esther Esperanza Guzman Salazar" textAlignment="CENTER" textFill="WHITE">
@@ -20,6 +19,6 @@
             <Image url="@589e1409b4bc80e0b5ba99538251d66c.jpg" />
          </image>
       </ImageView>
-      <Button layoutX="21.0" layoutY="24.0" mnemonicParsing="false" text="↩" />
+      <Button layoutX="21.0" layoutY="24.0" mnemonicParsing="false" onAction="#regresaratrasButtonPressed" text="↩" />
    </children>
 </Pane>

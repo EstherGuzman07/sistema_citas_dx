@@ -10,11 +10,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-
-
 public class IniciodesesionController {
+
     @FXML
-    void Equipo(ActionEvent event)throws IOException {
+    void EquipoButtonPressed(ActionEvent event)throws IOException {
         FXMLLoader loader = new FXMLLoader(
                 IniciodesesionController.class.getResource("/nombresdeequipos.fxml")
         );
@@ -22,32 +21,34 @@ public class IniciodesesionController {
         Parent root = loader.load();
 
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setScene(new Scene(root,450, 750));
-        stage.show();
-
-    }
-
-
-
-    @FXML
-    void iniciosecionButtonPressed(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/iniciodesesion.fxml")
-        );
-
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
         stage.setScene(new Scene(root));
         stage.show();
 
     }
 
     @FXML
-    void registroButtonPressed(ActionEvent event)throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/Registro.fxml")
+    void iniciosecionButtonPressed(ActionEvent event)throws IOException {
+        FXMLLoader loader = new FXMLLoader(
+                IniciodesesionController.class.getResource("/sesion.fxml")
         );
 
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Parent root = loader.load();
 
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.show();
+
+    }
+
+    @FXML
+    void irASegundaEscena(ActionEvent event)throws IOException {
+        FXMLLoader loader = new FXMLLoader(
+                IniciodesesionController.class.getResource("/Registro.fxml")
+        );
+
+        Parent root = loader.load();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
 

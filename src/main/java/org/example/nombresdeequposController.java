@@ -1,4 +1,5 @@
 package org.example;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,19 +15,20 @@ public class nombresdeequposController {
 
     @FXML
     void regresaratrasButtonPressed(ActionEvent event)throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/nombresdeequipos.fxml")
+        FXMLLoader loader = new FXMLLoader(
+                nombresdeequposController.class.getResource("/iniciodesesion.fxml")
         );
 
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Parent root = loader.load();
 
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
 
     }
 
     @FXML
-    void slirdenombresdeequiposButtonPressed(MouseEvent event)  {
-
+    void slirdenombresdeequiposButtonPressed(MouseEvent event) {
 
     }
 
