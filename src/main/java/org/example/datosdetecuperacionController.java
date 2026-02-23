@@ -19,7 +19,7 @@ public class datosdetecuperacionController {
     @FXML
     void enviarButtonPressed(ActionEvent event)throws IOException {
         FXMLLoader loader = new FXMLLoader(
-                datosdetecuperacionController.class.getResource("/.fxml")
+                datosdetecuperacionController.class.getResource("/sesion.fxml")
         );
 
         Parent root = loader.load();

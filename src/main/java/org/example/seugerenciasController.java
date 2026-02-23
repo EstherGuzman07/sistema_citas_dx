@@ -40,7 +40,16 @@ public class seugerenciasController {
     }
 
     @FXML
-    void filtrarButtonPressed(ActionEvent event) {
+    void filtrarButtonPressed(ActionEvent event)throws IOException {
+        FXMLLoader loader = new FXMLLoader(
+                seugerenciasController.class.getResource("/filtro.fxml")
+        );
+
+        Parent root = loader.load();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.show();
 
     }
 
