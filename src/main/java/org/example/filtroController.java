@@ -77,7 +77,14 @@ public class filtroController {
     }
 
     @FXML
-    void salirdelfiltroButtonPressed(ActionEvent event) {
+    void salirdelfiltroButtonPressed(ActionEvent event)throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/sugerencias.fxml")
+        );
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        stage.setScene(new Scene(root));
+        stage.show();
 
     }
 
