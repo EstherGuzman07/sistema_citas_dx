@@ -70,7 +70,7 @@ public class seugerenciasController {
     @FXML
     void sugerenciavegettaButtonPressed(ActionEvent event)throws IOException {
         FXMLLoader loader = new FXMLLoader(
-                seugerenciasController.class.getResource("/soliencviadagoticamasvegeta.fxml")
+                seugerenciasController.class.getResource("/solicitudenviadavegeta.fxml")
         );
 
         Parent root = loader.load();
