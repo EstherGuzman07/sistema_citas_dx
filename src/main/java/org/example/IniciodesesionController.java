@@ -15,7 +15,7 @@ public class IniciodesesionController {
     @FXML
     void equipo(ActionEvent event)throws IOException {
         FXMLLoader loader = new FXMLLoader(
-                IniciodesesionController.class.getResource("/nombres de equipos.fxml")
+                IniciodesesionController.class.getResource("/nombresdeequipos.fxml")
         );
 
         Parent root = loader.load();
