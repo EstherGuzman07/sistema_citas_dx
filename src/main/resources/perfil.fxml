@@ -8,17 +8,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="384.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.perfilController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="384.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.perfilController">
    <children>
-      <Pane prefHeight="55.0" prefWidth="384.0" style="-fx-background-color: #84b6f4;">
-         <children>
-            <Button layoutX="4.0" layoutY="11.0" mnemonicParsing="false" onAction="#inicioButton1Pressed" style="-fx-background-color: #84b6f4;" text="← Inicio">
-               <font>
-                  <Font name="Calibri Bold" size="18.0" />
-               </font>
-            </Button>
-         </children>
-      </Pane>
+      <Pane prefHeight="55.0" prefWidth="384.0" style="-fx-background-color: #84b6f4;" />
       <ImageView fitHeight="52.0" fitWidth="54.0" layoutX="175.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@descarga.png" />
@@ -44,6 +36,11 @@
             <Font name="Calibri Bold" size="12.0" />
          </font>
       </Label>
+      <Button layoutY="71.0" mnemonicParsing="false" onAction="#inicioButton1Pressed" style="-fx-background-color: #84b6f4;" text="← Inicio">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Button>
    </children>
    <opaqueInsets>
       <Insets left="10.0" />

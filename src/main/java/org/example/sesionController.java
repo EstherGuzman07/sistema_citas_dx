@@ -22,7 +22,7 @@ public class sesionController {
     @FXML
     void iniciiarsecionButtonPressed(ActionEvent event)throws IOException {
         FXMLLoader loader = new FXMLLoader(
-                sesionController.class.getResource("/sugerencias.fxml")
+                sesionController.class.getResource("/avisodeprivacidad.fxml")
         );
 
         Parent root = loader.load();
@@ -36,7 +36,7 @@ public class sesionController {
     @FXML
     void olvidaedatosButtonPressed(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(
-                sesionController.class.getResource("/perdida de datos.fxml")
+                sesionController.class.getResource("/sesion.fxml")
         );
 
         Parent root = loader.load();
@@ -49,7 +49,7 @@ public class sesionController {
     @FXML
     void regresoButtonPressed(ActionEvent event)throws IOException {
         FXMLLoader loader = new FXMLLoader(
-                sesionController.class.getResource("/iniciodesesion.fxml")
+                sesionController.class.getResource("/sesion.fxml")
         );
 
         Parent root = loader.load();

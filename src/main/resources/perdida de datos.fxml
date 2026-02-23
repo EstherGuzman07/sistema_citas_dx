@@ -53,5 +53,6 @@
             <Font name="Corbel Bold" size="24.0" />
          </font>
       </Label>
+      <Button layoutX="14.0" layoutY="24.0" mnemonicParsing="false" onAction="#regreso1" text="Regresar" />
    </children>
 </Pane>
