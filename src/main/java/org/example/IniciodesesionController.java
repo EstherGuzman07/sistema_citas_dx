@@ -11,6 +11,19 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class IniciodesesionController {
+    @FXML
+    void Equipo(ActionEvent event)throws IOException {
+        FXMLLoader loader = new FXMLLoader(
+                IniciodesesionController.class.getResource("/nombresdeequpos.fxml")
+        );
+
+        Parent root = loader.load();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root,450, 750));
+        stage.show();
+
+    }
 
     @FXML
     void equipo(ActionEvent event)throws IOException {
